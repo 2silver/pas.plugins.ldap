@@ -95,8 +95,8 @@ class BasePropertiesForm(BrowserView):
             return val
 
         props.uri = fetch('server.uri')
-        props.user = fetch('server.user', '')
-        props.password = fetch('server.password', '')
+        props.user = fetch('server.user', UNSET)
+        props.password = fetch('server.password', UNSET)
         props.ignore_cert = fetch('server.ignore_cert')
         # TODO: later
         # props.start_tls = fetch('server.start_tls')
